@@ -37,6 +37,6 @@ Programming is fun! Solve interesting puzzles and make tools that change the wor
 Get Involved
 ============
 
-Want to get involved in the {FIXME} coding school? Email us at cs.wang20(at)gmail.com.
+Want to get involved in the {FIXME} coding school? Let us know by Friday, October 2nd to cs.wang20(at)gmail.com.
 
 Thanks everyone!
