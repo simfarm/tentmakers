@@ -1,5 +1,5 @@
-Tentmakers Coding School
-========================
+Tentmakers
+==========
 
 Welcome to the Tentmakers coding school! Want to hear a quick story...?
 

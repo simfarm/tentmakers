@@ -1,1 +1,3 @@
+## ...Words of wisdom....
 
+Proverbs 25:2: It is the glory of God to conceal a matter; to search out a matter is the glory of kings.
