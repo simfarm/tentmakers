@@ -35,6 +35,8 @@ A few quick reasons to consider programming as a profession:
 Get Involved!
 =============
 
-Want to get involved in the Tentmakers coding school? Let us know by Friday, October 10th by emailing us at cs.wang20(at)gmail.com.
+Want to get involved in the Tentmakers coding school? Let us know by Friday, October 30th by emailing us at cs.wang20(at)gmail.com.
 
-Thanks for reading everyone!
+We will meet Saturdays evenings in downtown Durham. Actual class meeting time will be determined on an ad hoc basis.
+
+Thanks for reading [everyone](https://github.com/simfarm/tentmakers/blob/master/files/first_class.png)!
