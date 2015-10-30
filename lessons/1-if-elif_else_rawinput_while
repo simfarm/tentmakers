@@ -1,0 +1,111 @@
+#
+# Tentmakers: Lesson 1
+# Topics covered: if, elif, else, raw_input, while
+#
+
+#
+# "if: a basic construction"
+#
+
+x = "pineapples"
+if x == "pineapples":
+    print "This line of code got executed."
+
+# "if in action"
+>>> if x == "pineapples":
+...     print "This line of code got executed."
+... 
+This line of code got executed.
+>>> 
+
+#
+# "elif: also known as "else/if"
+#
+
+x = "maffles"
+if x == "tonks":
+    print "The tonks-line got executed."
+elif x == "qual-nock":
+    print "The qual-nock-line got executed."
+elif x == "a mystery":
+    print "You are witnessing a mysterious thing."
+elif x == "maffles":
+    print "Alas! Wild maffles appeared!"
+    
+# "elif in action"
+>>> x = "maffles"
+>>> if x == "tonks":
+...     print "The tonks-line got executed."
+... elif x == "qual-nock":
+...     print "The qual-nock-line got executed."
+... elif x == "a mystery":
+...     print "You are witnessing a mysterious thing."
+... elif x == "maffles":
+...     print "Alas! Wild maffles appeared!"
+... 
+Alas! Wild maffles appeared!
+>>> 
+
+#
+# "else: for whatever's left"
+#
+
+x = "Not a fruit."
+if x == "apples":
+    print "You got an apple!"
+elif x == "oranges":
+    print "You got an orange!"
+elif x == "pineapples":
+    print "You got a pineapple!"
+else:
+    print "Looks like 'x' wasn't a fruit."
+
+# "else in action"
+
+>>> x = "Not a fruit."
+>>> if x == "apples":
+...     print "You got an apple!"
+... elif x == "oranges":
+...     print "You got an orange!"
+... elif x == "pineapples":
+...     print "You got a pineapple!"
+... else:
+...     print "Looks like 'x' wasn't a fruit."
+... 
+Looks like 'x' wasn't a fruit.
+
+#
+# "raw_input: a way to solicit user input"
+#
+
+x = raw_input("What do you want 'x' to be? ")
+print "Looks like the user picked %s." %x
+
+>>> x = raw_input("What do you want 'x' to be? ")
+What do you want 'x' to be? Chocolate
+>>> print "Looks like the user picked %s." %x
+Looks like the user picked Chocolate.
+>>>
+
+#
+# "while: keep doing this until a condition is satisfied"
+#
+
+choice = None
+valid_choices = ['1', '5', '10', '20', '100']
+
+while choice not in valid_choices:
+    choice = raw_input("Name me a type of dollar bill. ")
+print "Thanks for giving me a valid answer. You chose: %s!" % choice
+
+>>> while choice not in valid_choices:
+...     choice = raw_input("Name me a type of dollar bill. ")
+... 
+Name me a type of dollar bill. 2
+Name me a type of dollar bill. 2.4
+Name me a type of dollar bill. 11
+Name me a type of dollar bill. "And finally...."
+Name me a type of dollar bill. 10
+>>> print "Thanks for giving me a valid answer. You chose: %s!" % choice
+Thanks for giving me a valid answer. You chose: 10!
+>>> 

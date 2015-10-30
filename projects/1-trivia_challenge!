@@ -1,0 +1,135 @@
+#
+# Project 1-Trivia Challenge!
+# Topics covered: if, elif, else, raw_input, while 
+#
+
+# Create a trivia game that asks the user questions and solicits answers.
+# Trivia game must have a minimum of five questions.
+# 
+# For Mac users, you will need to type in the following to bash: 
+# chmod 700 {your_filename}
+# 
+# For Mac users, run with:
+# ./{filename}
+#
+# For Windows users, run by double-clicking your file.
+#
+# Name your file: 1-{your_full_name}_trivia_challenge.py.
+# For instance: 1-chris_wang_trivia_challenge.py.
+#
+# Files must start with "#!/usr/bin/python"
+#
+
+# A simple construction
+
+'''
+#!/usr/bin/python
+
+print \
+"""
+Question #1:
+Used to be called the "Arsenal of Democracy"
+-- Philadelphia
+-- Detroit
+-- Washington DC
+-- Los Angeles
+"""
+answer = "Detroit"
+choice = raw_input("You pick.... ")
+
+if choice.lower() == "Philadelphia":
+    print "Nope, not the city of brotherly love...."
+elif choice.lower() == "Detroit":
+    print "You got it right! Good job!"
+elif choice.lower() == "Washington DC":
+    print "Nope, not our nation's capital...."
+elif choice.lower() == "Los Angeles":
+    print "Nope, not the city of angeles...."
+else:
+    print "You picked an invalid choice."
+'''
+
+# Our simple construction in action
+
+'''
+Simfarm@Christophers-MacBook-Pro:~/Git/tower-qa$ ./1-chris_wang_trivia_challenge.py 
+
+Question #1:
+Used to be called the "Arsenal of Democracy"
+-- Philadelphia
+-- Detroit
+-- Washington DC
+-- Los Angeles
+
+You pick.... Detroit
+You got it right! Good job!
+Simfarm@Christophers-MacBook-Pro:~/Git/tower-qa$ 
+'''
+
+# A more complicated construction
+
+'''
+#!/usr/bin/python
+
+# starting user points
+points = 0
+
+# the question
+print \
+"""
+Question #1:
+Used to be called the "Arsenal of Democracy"
+-- Philadelphia
+-- Detroit
+-- Washington DC
+-- Los Angeles
+"""
+answer = "Detroit"
+
+# question setup
+choice = None
+valid_choices = ["Philadelphia", "Detroit", "Washington DC", "Los Angeles"]
+
+# prompt user and solicit answer
+while choice not in valid_choices:
+    choice = raw_input("You pick.... ")
+
+    if choice == "Philadelphia":
+        print "Nope, not the city of brotherly love...."
+    elif choice == "Detroit":
+        print "You got it right! Good job!"
+        # update and give player score
+        points += 1
+    elif choice == "Washington DC":
+        print "Nope, not our nation's capital...."
+    elif choice == "Los Angeles":
+        print "Nope, not the city of angeles...."
+    else:
+        print "You picked an invalid choice."
+
+# update player score
+print "\nYou have %s point(s)!" % points
+'''
+
+# Our more complicated construction in action
+
+'''
+Simfarm@Christophers-MacBook-Pro:~/Git/tower-qa$ ./1-chris_wang_trivia_challenge.py
+
+Question #1:
+Used to be called the "Arsenal of Democracy"
+-- Philadelphia
+-- Detroit
+-- Washington DC
+-- Los Angeles
+
+You pick.... Fairies
+You picked an invalid choice.
+You pick.... Chocolate
+You picked an invalid choice.
+You pick.... Detroit
+You got it right! Good job!
+
+You have 1 point(s)!
+Simfarm@Christophers-MacBook-Pro:~/Git/tower-qa$ 
+'''

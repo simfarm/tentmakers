@@ -1,0 +1,56 @@
+#
+# Tentmakers: Lesson 2
+# Topics covered: functions
+#
+
+#
+# A basic example
+#
+
+def area_of_a_circle(radius):
+    return 3.1415 * radius ** 2
+
+# Our basic example in action
+
+>>> # Our basic example in action
+... 
+>>> answer = area_of_a_circle(10)
+>>> print answer
+314.15
+>>> 
+
+#
+# Another example: returning "True" or "False"
+#
+
+def is_this_possible(event):
+    print "With God all things are possible."
+    return True
+
+# Our second example in action
+
+>>> answer = is_this_possible("For God to redeem my life.")
+With God all things are possible.
+True
+>>> print answer
+>>> True
+>>> 
+
+#
+# Chaining function calls: the motivation.
+# "Take a number. Double it. Then double it again. Then add four."
+#
+
+def double_it(number):
+   return 2 * number 
+
+def add_four(number):
+   return number + 4
+
+# Chaining functions in action. Test number: 10.
+
+>>> answer = add_four(double_it(double_it(10)))
+>>> answer
+44
+>>> 
+
