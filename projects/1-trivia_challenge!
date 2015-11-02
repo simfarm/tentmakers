@@ -34,16 +34,16 @@ Used to be called the "Arsenal of Democracy"
 -- Washington DC
 -- Los Angeles
 """
-answer = "Detroit"
+# the answer is "Detroit"
 choice = raw_input("You pick.... ")
 
-if choice.lower() == "Philadelphia":
+if choice == "Philadelphia":
     print "Nope, not the city of brotherly love...."
-elif choice.lower() == "Detroit":
+elif choice == "Detroit":
     print "You got it right! Good job!"
-elif choice.lower() == "Washington DC":
+elif choice == "Washington DC":
     print "Nope, not our nation's capital...."
-elif choice.lower() == "Los Angeles":
+elif choice == "Los Angeles":
     print "Nope, not the city of angeles...."
 else:
     print "You picked an invalid choice."
@@ -84,7 +84,7 @@ Used to be called the "Arsenal of Democracy"
 -- Washington DC
 -- Los Angeles
 """
-answer = "Detroit"
+# the answer is "Detroit"
 
 # question setup
 choice = None
