@@ -114,3 +114,11 @@ $ git status
 #
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
+
+
+
+
+# After these steps are complete, people oftentimes will go to the repository
+# (https://github.com/simfarm/tentmakers.git), go to "Pull requests", and
+# submit a pull request for someone else to review. We can go over how to
+# do this in person.
