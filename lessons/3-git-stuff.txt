@@ -1,0 +1,116 @@
+#
+# Tentmakers: Lesson 3
+# Topics covered: Git, Github
+#
+
+#
+# Git is a version control system for code,
+# meaning that it keeps track of lots of files of code,
+# who's done what changes, and when.
+#
+# Some reasons it's useful:
+#    - allows many people to work on a project at the same time
+#    - record of all of the files in the project, who wrote them, edited them, and when
+#    - much easier to share files than email, etc.
+#
+
+==========================
+  PART I: Installing Git
+==========================
+This depends on your operating system, but we will help you with this.
+
+
+
+==========================
+  PART II: Getting a Git project
+==========================
+
+# git clone <repository URL>
+#
+# This is the first thing to do when you want to get a repository onto your
+# computer. Get the repository url from the repository website, 
+# such as https://github.com/simfarm/tentmakers.git and run
+# git clone https://github.com/simfarm/tentmakers.git
+#
+
+$ git clone https://github.com/simfarm/tentmakers.git
+Cloning into 'tentmakers'...
+remote: Counting objects: 51, done.
+remote: Total 51 (delta 0), reused 0 (delta 0), pack-reused 51
+Unpacking objects: 100% (51/51), done.
+
+
+# git checkout <branch name>
+# Each project can have lots of branches to work on, and whenever you start
+# a new piece of work it's a good idea to checkout a new branch for it.
+# To checkout the make_volume branch run git checkout new_volume
+
+$ git checkout new_volume
+
+# If you want to make a new branch, then you will need to add a '-b' before the branch name
+
+$ git checkout -b new_volume
+
+
+
+# git add <filename>
+#
+# work on a file, write some code to it, save it, and now you're ready to start
+# sending it to Github to let other people see it. We will need to add the file,
+# then commit a message, then push the file. To add a file called new_file.py run
+# git add new_file.py
+
+$ git add new_file.py
+
+
+
+
+# git commit -m <message>
+#
+# After adding a file it's a good idea to write a message to summarize the work
+# you've done. To tell people that new_file.py has a new volume() function you
+# wrote, run git commit -m 'added new volume() function'
+
+$ git commit -m 'added new volume() function'
+
+
+
+
+# git push origin <branch name>
+#
+# The last thing to get your new code to Github is pushing it from your computer
+# to Github. To push all of your work from the new_volume branch run
+# git push origin new_volume
+
+$ git push origin new_volume
+
+
+
+# git pull origin <branch name>
+#
+# To get the latest code from a branch you can run git pull origin <branch name>
+# This will get whatever code other people have pushed onto the branch onto
+# your computer. To pull down the latest code from the new_volume branch run
+# git pull origin new_volume
+
+$ git pull origin new_volume
+From https://github.com/simfarm/tentmakers
+ * branch            new_volume     -> FETCH_HEAD
+Already up-to-date.
+
+
+
+# git status
+#
+# To figure out the status of which branch you're on, which files you've edited
+# run git status.
+
+$ git status
+# On branch new_volume
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   new_file.py
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
