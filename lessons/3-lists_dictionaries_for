@@ -1,0 +1,145 @@
+#
+# Tentmakers: Lesson 3 
+# Topics covered: lists, dictionaries, for
+#
+
+#
+# Lists: basic examples
+#
+
+# A list of strings
+backpack = ["eraser", "books", "laptop"]
+
+# A list of differently-typed objects
+objects = ["string", 3, 3.5, False, []]
+
+#
+# List indexing: a basic example
+#
+
+backpack = ["eraser", "books", "laptop"]
+
+>>> backpack[0]
+'eraser'
+>>> backpack[1]
+'books'
+>>> backpack[2]
+'laptop'
+>>> backpack[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  IndexError: list index out of range
+
+#
+# List methods
+#
+
+# Add an element to a list
+basketball_team = ["center", "power forward", "small forward", "shooting guard", "point guard"]
+basketball_team.append("recruit")
+
+>>> print basketball_team
+['center', 'power forward', 'small forward', 'shooting guard', 'point guard', 'recruit']
+
+# Remove an element from a list
+basketball_team.remove("center")
+
+>>> print basketball_team
+['power forward', 'small forward', 'shooting guard', 'point guard', 'recruit']
+
+#
+# Dictionaries: "key-value" pairs
+# Some basic examples
+#
+
+# Here's a dictionary of grocery items and their prices
+grocery_inventory = {"milk": 3.24, "cliff bar": 1.10, "cheese": 4.50, "juice": 3.20}
+
+# Here's a dictionary using our basketball team example again
+basketball_team = {"center": "Kennedy Meeks", "power forward": "Brice Johnson", "small forward": "Justin Jackson", "shooting guard": "Kenny Williams", "point guard": "Marcus Paige"} 
+
+#
+# Dictionaries: how to use
+#
+
+# Get a value given a key
+>>> print basketball_team["center"]
+Kennedy Meeks
+
+# Add a key-value pair to your dictionary
+>>> basketball_team["recruit"] = "Seventh Woods"
+>>> print basketball_team
+{'point guard': 'Marcus Paige', 'center': 'Kennedy Meeks', 'shooting guard': 'Kenny Williams', 'recruit': 'Seventh Woods', 'power forward': 'Brice Johnson', 'small forward': 'Justin Jackson'}
+
+# Delete a key-value pair... let's say Seventh Woods decommmits (leaves the team)
+>>> del basketball_team['recruit']
+>>> print basketball_team
+{'point guard': 'Marcus Paige', 'center': 'Kennedy Meeks', 'shooting guard': 'Kenny Williams', 'power forward': 'Brice Johnson', 'small forward': 'Justin Jackson'}
+
+# Update a key-value pair... let's say that Brice Johnson gets injured
+basketball_team["power forward"] = "Isaiah Hicks"
+
+>>> print basketball_team
+{'point guard': 'Marcus Paige', 'center': 'Kennedy Meeks', 'shooting guard': 'Kenny Williams', 'power forward': 'Isaiah Hicks', 'small forward': 'Justin Jackson'}
+
+#
+# Dictionary methods
+#
+
+>>> basketball_team.keys()
+['point guard', 'small forward', 'center', 'shooting guard', 'power forward']
+>>> basketball_team.values()
+['Marcus Paige', 'Justin Jackson', 'Kennedy Meeks', 'Kenny Williams', 'Brice Johnson']
+
+#
+# For: for iterating over a list
+# Some basic examples
+#
+
+# Just print the numbers in your list
+>>> numbers = [1, 3, 5, 7, 9]
+>>> for number in numbers:
+...     print number
+... 
+1
+3
+5
+7
+9
+>>> 
+
+# Increase prices by 10%
+grocery_inventory = {"milk": 3.24, "cliff bar": 1.10, "cheese": 4.50, "juice": 3.20}
+
+>>> for item in grocery_inventory:
+...     grocery_inventory[item] = 1.1 * grocery_inventory[item]
+... 
+>>> print grocery_inventory
+{'cliff bar': 1.21, 'cheese': 4.95, 'milk': 3.564, 'juice': 3.52}
+
+# Print 00-99 by using two for loops    
+for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:
+...     for j in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:
+...             print i,j
+
+# Basically, the syntax is as follows:
+
+for {{placeholder variable name}} in {{iterable}}:
+    {{do something}}     
+
+# {{Basically, pick whatever you want for {{paceholder variable name}}
+# {{iterable}} ==> an object-type that can be iterated over in Python.
+# Lists, dictionaries, strings are all iterable. 
+
+>>> word = "Russian"
+>>> for letter in word:
+...     print letter
+... 
+R
+u
+s
+s
+i
+a
+n
+>>> 

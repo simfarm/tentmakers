@@ -8,6 +8,9 @@
 # 2) Area of a rectangle
 # 3) Area of a square
 # 4) Area of a trapezoid
+# 5) A function that returns that average of a list of numbers
+# 6) A function that returns the median of a list of numbers
+# 7) A function that returns the mode of a list of numbers
 
 # Challenge! Create the following functions:
 # 1) A function that determines if a number is prime
