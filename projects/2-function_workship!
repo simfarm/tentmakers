@@ -3,6 +3,10 @@
 # Topics covered: functions 
 #
 
+# Try to create the following functions. If you have time, try the challenge problems. 
+# Please remember to syntax your code as demonstrated below. Test all functions with
+# a demonstration.
+
 # Tier one: create the following functions:
 # 1) Circumference of a circle
 # 2) Area of a rectangle
@@ -20,3 +24,16 @@
 # 4) A function that determines how much money you will have in n years given an initial deposit and an interest rate.
 # For instance, depositing 100$ at 5% interest interest rate will give you 105$ in one year, 110.25$ in two years, etc.
 
+# A simple construction
+
+'''
+#!/usr/bin/python
+
+def circumference_of_circle(radius):
+    area = 3.1415 * radius * radius
+    return area
+    
+# Here's a sample with radius 2
+result = circumference_of_circle(2)
+print result
+'''
