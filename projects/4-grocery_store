@@ -1,0 +1,92 @@
+#
+# Tentmakers: Lesson 4-grocery_store 
+# Topics covered: lists, dictionaries, loops, for 
+#
+
+# Create a virtual grocery store! Grocery store should be able to:
+# * Add items to cart
+# * Remove items from cart
+# * See items in your cart 
+# * Check out your order
+
+# For added challenge:
+# * Add in the ability to apply a universal discout (20% off--for instance) to your entire order
+# * Add in the ability to apply item-specific discounts (20% off milk, for instance)
+# * To see the current value of all items in your cart
+# * To write the entire program using functions
+# * To write a really expansive grocery-store inventory
+# * To make your grocery store pleasing aesthetically 
+
+# A simple (and incomplete) construction
+
+'''
+#!/usr/bin/python
+
+grocery_inventory = {"milk": 3.24, "cliff bar": 1.10, "cheese": 4.50, "juice": 3.20}
+cart = []
+
+def context_menu():
+    print "Welcome to FoodMart, where all of your dreams can come true.\n"
+    choice = None
+
+    while choice != "checkout":
+        print """\
+You may....
+* LIST available items.
+* DISPLAY shopping cart contents.
+* ADD item to cart.
+* REMOVE item to cart.
+* CHECKOUT your cart.
+"""
+
+        choice = raw_input("What would you like to do? ")
+        choice = choice.lower()
+
+        if choice == "list":
+            list_items()
+        elif choice == "display":
+            display_items()
+        elif choice == "add":
+            add_item()
+        elif choice == "remove":
+            remove_item()
+        elif choice == "checkout":
+            checkout_items()
+        else:
+            print "\"What?\""
+        raw_input("\nPress enter to continue. ")
+        print ""
+
+def list_items():
+    print "The grocery store has:"
+    for item in grocery_inventory:
+        print "* %s - $%s" % (item, grocery_inventory[item])
+
+def display_items():
+    print "Your cart currently has the following:"
+
+    # for empty shopping carts
+    if len(cart) == 0:
+        print "Shopping cart empty."
+
+    # for non-empty shopping carts
+    else:
+        for item in cart:
+            print "* %s" % item
+
+def add_item():
+    print "Which item would you like to add to your cart?"
+    print "\nAvailable items: %s." % grocery_inventory.keys()
+
+    choice = None
+    while choice not in grocery_inventory.keys():
+        choice = raw_input("What would you like to add...? ")
+        if choice in grocery_inventory.keys():
+            print "Added item %s to cart." % choice
+            cart.append(choice)
+        else:
+            print "Can't find item %s." % choice
+
+# Instantiate your grocery-store program
+context_menu()
+'''
