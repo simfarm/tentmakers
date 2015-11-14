@@ -92,7 +92,7 @@ basketball_team["power forward"] = "Isaiah Hicks"
 ['Marcus Paige', 'Justin Jackson', 'Kennedy Meeks', 'Kenny Williams', 'Brice Johnson']
 
 #
-# For: for iterating over a list
+# For: for iterating over an "iterable"
 # Some basic examples
 #
 
@@ -127,7 +127,7 @@ for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:
 for {{placeholder variable name}} in {{iterable}}:
     {{do something}}     
 
-# {{Basically, pick whatever you want for {{paceholder variable name}}
+# Basically, pick whatever you want for {{paceholder variable name}}
 # {{iterable}} ==> an object-type that can be iterated over in Python.
 # Lists, dictionaries, strings are all iterable. 
 
