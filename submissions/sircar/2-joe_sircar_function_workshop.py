@@ -1,7 +1,3 @@
-#i need to make this
-
-def circumference(radius)
-	circum = (radius**2)
 # Tier one: create the following functions:
 # 1) Circumference of a circle
 # 2) Area of a rectangle
@@ -18,4 +14,6 @@ def circumference(radius)
 # 3) A function that determines if something will float. Acceptable params for this function: mass and volume.
 # 4) A function that determines how much money you will have in n years given an initial deposit and an interest rate.
 # For instance, depositing 100$ at 5% interest interest rate will give you 105$ in one year, 110.25$ in two years, etc.
+
+
 
