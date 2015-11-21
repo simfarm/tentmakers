@@ -1,0 +1,19 @@
+#
+# Tentmakers: Lesson 3-git_github 
+# Topics covered: Git, Github 
+#
+
+# Tier one: Do the following things (in order):
+# 1) Create a github account
+# 2) Clone the tentmakers repository (https://github.com/simfarm/tentmakers.git) 
+# 3) Checkout your own branch
+# 4) Create a new file
+# 5) git add the new file
+# 6) write a git commit
+# 7) git push the new file
+
+
+# Challenge! See if you can do the following things:
+# 1) On your own branch create several new files, git add them, write a commit, and push them
+# 2) Edit one of your files that you created, git add the file, write a commit message, and push it
+# 3) Go to the repository, find "Pull requests" on the page, and submit a new pull request to base:master and compare: <your branch name>
