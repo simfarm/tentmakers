@@ -1,3 +1,36 @@
+import math
+from collections import Counter
+data = Counter(your_list_in_here)
+
+def circumference(radius)
+	circ = (radius**2)*math.pi
+	return circ
+
+def rectangle_area(side1,side2)
+	area=side1*side2
+	return area
+
+def sqaure_area(side)
+	area=side*side
+	return area
+
+def average(numbers)
+	lengthof = numbers.length()
+	sumof = sum(numbers)
+	return sumof/lengthof
+
+def median(numbers)
+	lengthof = numbers.length()
+	middle=lengthof/2
+	if (middle%1 == 0)
+		return numbers[(middle-1)]
+	else
+		averagemid = (numbers[(middle-.5)]+numbers[(middle+.5)])/2
+		return averagemid
+
+def mode(numbers)
+
+
 # Tier one: create the following functions:
 # 1) Circumference of a circle
 # 2) Area of a rectangle
