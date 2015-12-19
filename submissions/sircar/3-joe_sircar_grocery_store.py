@@ -45,6 +45,7 @@ def remove_from_cart():
 	remove_item_input= raw_input ("What item would you like to remove? (1 per instance) ")
 	print
 	if remove_item_input in cart.keys():
+
 		for key in cart:
 			if key == remove_item_input:
 				if cart[key] > 0:
@@ -52,15 +53,21 @@ def remove_from_cart():
 					stock[key] += 1
 					cart[key] -= 1
 					print "We've removed one %s from your cart."%(key)
-					if cart[key] == 0:
-						del cart[key]
-					print
-					see_cart()
 
 				elif cart[key] == 0:
 					print "You don't have any %ss in your cart to remove!" %(key)
 					print
 					see_cart()
+
+		keys_to_delete=[]
+		for key in cart:
+			if cart[key] == 0:
+				keys_to_delete.append(key)
+		for key in keys_to_delete:
+			del cart[key]
+
+		print
+		see_cart()
 	else:
 		print "You don't have any %ss in your cart to remove!" %(remove_item_input)
 		see_cart()
